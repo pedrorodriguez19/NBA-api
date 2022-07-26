@@ -13,7 +13,6 @@ public class Liga {
 	private String nombre;
 	private String ubicacion;
 	private Date fechaCreacion;
-	private String imagen;
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "equiposliga", joinColumns = @JoinColumn(name = "idLiga"), inverseJoinColumns = @JoinColumn(name = "idEquipo"))
 	private List<Equipo> equipos;
@@ -57,14 +56,6 @@ public class Liga {
 
 	public void setEquipos(List<Equipo> equipos) {
 		this.equipos = equipos;
-	}
-
-	public String getImagen() {
-		return imagen;
-	}
-
-	public void setImagen(String imagen) {
-		this.imagen = imagen;
 	}
 
 }
