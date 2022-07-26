@@ -8,8 +8,6 @@ Requisitos mínimos para iniciar este proyecto:
 
 para iniciar este proyecto habrá que ejecutar los siguientes comandos:
 
-(Como instalar el frontend esta descrito en su [repositorio](https://github.com/pedrorodriguez19/front-pfc))
-
 ```bash
 cd /ruta/al/proyecto
 mvn clean install
